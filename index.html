@@ -1,1 +1,277 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="logo">Logo</div>
+
+      <nav>
+
+        <ul>
+
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#">About</a></li>
+
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <div class="hamburger">
+
+          <i class="fas fa-bars"></i>
+
+        </div>
+
+      </nav>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+      <div class="social-icons">
+
+        <a href="https://github.com/your-profile"><i
+            class="fab fa-github"></i></a>
+
+        <a href="https://linkedin.com/in/your-profile"><i
+            class="fab fa-linkedin"></i></a>
+
+        <a href="https://linkedin.com/in/your-profile"><i
+            href="https://indeed.com/your-profile"><img
+              src="https://img.icons8.com/?size=100&id=B3a6gyRNr6Wh&format=png&color=000000"
+              alt="Indeed Icon"
+              style="width: 24px; height: 24px;"></a>
+
+        </div>
+
+        <p>Copyright &copy;2024 All rights reserved</p>
+
+      </footer>
+
+    </body>
+
+  </html>
+
+  <style>
+
+  body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+
+  header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 20px;
+
+    background-color: #a27e8e;
+
+    border-bottom: 1px solid #88292f;
+
+  }
+
+
+  main{
+
+    height: 750px;
+
+    width: 100%;
+
+    background-color: #0b3954;
+
+  }
+
+
+  .logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #000;
+
+  }
+
+
+  nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+
+  nav ul li {
+
+    margin-right: 20px;
+
+  }
+
+
+  nav ul li a {
+
+    text-decoration: none;
+
+    color: #000;
+
+    font-size: 16px;
+
+  }
+
+
+  nav ul li a:hover {
+
+    color: #555;
+
+  }
+
+
+  .hamburger {
+
+    display: none;
+
+    cursor: pointer;
+
+  }
+
+
+  .hamburger i {
+
+    font-size: 24px;
+
+  }
+
+
+  footer {
+
+    margin-top: auto;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #a27e8e;
+
+    border-top: 1px solid #88292f;
+
+  }
+
+
+  .social-icons {
+
+    margin-bottom: 10px;
+
+  }
+
+
+  .social-icons a {
+
+    text-decoration: none;
+
+    color: #000;
+
+    margin: 0 10px;
+
+    font-size: 24px;
+
+  }
+
+
+  .social-icons a:hover {
+
+    color: #555;
+
+  }
+
+
+  footer p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #000;
+
+  }
+
+
+  @media (max-width: 768px) {
+
+    nav ul {
+
+      display: none;
+
+      flex-direction: column;
+
+      width: 100%;
+
+      background-color: #a27e8e;
+
+      position: absolute;
+
+      top: 60px;
+
+      left: 0;
+
+      border-top: 1px solid #88292f;
+
+    }
+
+    nav ul li {
+
+      margin: 15px 0;
+
+    }
+
+    .hamburger {
+
+      display: block;
+
+    }
+
+    nav ul.active {
+
+      display: flex;
+
+    }
+
+  }
+
+</style>
