@@ -4,7 +4,6 @@ body {
   background-color: #0b3954;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -13,14 +12,11 @@ header {
   background-color: #a27e8e;
   border-bottom: 1px solid #88292f;
 }
-main{
 
+main {
   height: 1000px;
-
   width: 100%;
-
   background-color: #0b3954;
-
 }
 
 .logo {
@@ -57,6 +53,10 @@ nav ul li a:hover {
 
 .hamburger i {
   font-size: 24px;
+}
+
+.hamburger:hover i {
+  color: #555;
 }
 
 .contact {
@@ -156,10 +156,15 @@ footer p {
     top: 60px;
     left: 0;
     border-top: 1px solid #88292f;
+    z-index: 1;
   }
 
   nav ul li {
     margin: 15px 0;
+  }
+
+  nav ul li a {
+    padding: 10px 20px;
   }
 
   .hamburger {
@@ -167,7 +172,48 @@ footer p {
   }
 
   nav ul.active {
+    max-height: 500px;
     display: flex;
+  }
+
+  .dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #a27e8e;
+    position: absolute;
+    top: 60px;
+    left: 69%;
+    width: 150px;
+    border-top: 1px solid #88292f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+  }
+
+  .dropdown-menu.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-menu li {
+    padding: 5px 0;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #555;
+    color: #fff;
   }
 
   .contact {
